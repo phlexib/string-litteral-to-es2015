@@ -3,7 +3,7 @@
 const vscode = require("vscode");
 const babel = require("babel-core");
 const path = require("path");
-const dedent = require("dedent");
+// const dedent = require("dedent");
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
