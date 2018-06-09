@@ -4,6 +4,7 @@ const vscode = require("vscode");
 const babel = require("babel-core");
 const path = require("path");
 
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function activate(context) {
@@ -30,12 +31,13 @@ function activate(context) {
       let selection = editor.selection;
       let text = editor.document.getText(selection);
 
-     
+      console.log(__dirname);
 
       let transformedText = babel.transform(text, {
         plugins: [
           path.join(
             __dirname,
+            "../",
             "node_modules",
             "babel-plugin-transform-es2015-template-literals"
           )
@@ -58,7 +60,7 @@ ${transformedText.code}
         .then(function() {
             editor.selection = selection;
             vscode.commands.executeCommand("editor.action.blockComment");
-          vscode.window.showInformationMessage(
+            vscode.window.showInformationMessage(
             "Successfully Created es2015 string"
           );
         });

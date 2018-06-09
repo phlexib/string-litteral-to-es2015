@@ -1,7 +1,7 @@
 {
-    "name": "string-litteral-to-es2015",
-    "displayName": "String Litteral To ES2015",
-    "description": "Transform a String Litteral into a ES2015 compatible string",
+    "name": "string-literal-to-es2015",
+    "displayName": "String Literal To ES2015",
+    "description": "Transform a String Literal into a ES2015 compatible string",
     "version": "0.0.1",
     "publisher": "benrohel",
     "engines": {
@@ -11,14 +11,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.transformStringLitteral"
+        "onCommand:extension.transformStringLiteral"
     ],
-    "main": "./extension",
+    "main": "./src/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "extension.transformStringLitteral",
-                "title": "Transform String Litteral"
+                "command": "extension.transformStringLiteral",
+                "title": "Transform String Literal"
             }
         ]
     },
@@ -36,6 +36,10 @@
         "vscode": "^1.1.6"
     },
     "dependencies": {
-        "dedent": "^0.7.0"
+        "dedent": "^0.7.0",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-parcel": "^0.3.5",
+        "vsce": "^1.42.0"
     }
 }
