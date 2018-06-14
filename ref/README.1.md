@@ -1,16 +1,16 @@
 # string-litteral-to-es2015 README
 
-Convert a ES6 selected Template literal into a VanillaJS.
+This is the README for your extension "string-litteral-to-es2015". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
-Select a template literal, including opening and closing ``.
-Open the Command Palette `Cmd+Shift+P` and look for "Transform String Literal".
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 For example if there is an image subfolder under your extension project workspace:
 
-![example](static/transform-literal.gif)
+\!\[feature X\]\(images/feature-x.png\)
 
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 

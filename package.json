@@ -2,10 +2,10 @@
     "name": "string-literal-to-es2015",
     "displayName": "String Literal To ES2015",
     "description": "Transform a String Literal into a ES2015 compatible string",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "benrohel",
     "engines": {
-        "vscode": "^1.24.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Other"
@@ -36,10 +36,10 @@
         "vscode": "^1.1.6"
     },
     "dependencies": {
-        "dedent": "^0.7.0",
-        "del": "^3.0.0",
-        "gulp": "^3.9.1",
         "gulp-parcel": "^0.3.5",
         "vsce": "^1.42.0"
-    }
+    },
+    "repository": "https://github.com/phlexib/string-litteral-to-es2015.git"
+        
+    
 }
